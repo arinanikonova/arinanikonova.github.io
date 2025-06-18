@@ -2,82 +2,189 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Арина Никонова</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap');
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body {
-      background-color: #0a0a0a;
+      background: linear-gradient(to bottom, #0a0a0a, #111);
       color: #00ff9c;
       font-family: 'Fira Mono', monospace;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      overflow: hidden;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
     }
 
     .container {
-      text-align: center;
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 20px;
+    }
+
+    h1, h2 {
+      border-left: 5px solid #00ff9c;
+      padding-left: 12px;
+      margin-bottom: 14px;
+    }
+
+    a {
+      color: #00e3ff;
+      text-decoration: none;
+    }
+
+    .info {
+      margin-bottom: 30px;
+    }
+
+    img.avatar {
+      border-radius: 10px;
+      max-width: 200px;
+      margin-bottom: 20px;
+      border: 2px solid #00ff9c;
+    }
+
+    .section {
+      margin-bottom: 50px;
       opacity: 0;
-      transform: translateY(20px);
-      animation: fadeInUp 1.5s ease forwards;
+      transform: translateY(40px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+      background: #131313;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 12px #00332244;
     }
 
-    .container h1 {
-      font-size: 2.5rem;
-      letter-spacing: 1px;
-      margin-bottom: 1rem;
-      border-right: 0.15em solid #00ff9c;
-      white-space: nowrap;
-      overflow: hidden;
-      animation: typing 2s steps(30, end), blinkCaret 0.75s step-end infinite;
+    .section.visible {
+      opacity: 1;
+      transform: translateY(0);
     }
 
-    @keyframes fadeInUp {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+    .tag {
+      display: inline-block;
+      background: #222;
+      border: 1px solid #00ff9c;
+      padding: 5px 10px;
+      margin: 4px 4px 0 0;
+      border-radius: 4px;
+      font-size: 0.9em;
     }
 
-    @keyframes typing {
-      from {
-        width: 0
-      }
-      to {
-        width: 100%
-      }
+    .slideshow {
+      display: flex;
+      overflow-x: auto;
+      gap: 10px;
     }
 
-    @keyframes blinkCaret {
-      50% {
-        border-color: transparent;
-      }
+    .slideshow img {
+      height: 200px;
+      border-radius: 6px;
+      border: 2px solid #00ff9c;
+    }
+
+    video {
+      width: 100%;
+      max-height: 400px;
+      border: 2px solid #00ff9c;
+      border-radius: 6px;
     }
 
     footer {
-      position: absolute;
-      bottom: 10px;
-      font-size: 0.8rem;
-      color: #555;
+      text-align: center;
+      color: #444;
+      font-size: 0.8em;
+      margin-top: 60px;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Здесь будет Арина Никонова</h1>
+    <h1>Прошмандовка Киреевска</h1>
+
+    <div class="section">
+      <h2>Основное</h2>
+      <div class="info">
+        <div><strong>ФИО:</strong> Арина Александровна Никонова</div>
+        <div><strong>Город:</strong> Киреевск, Тульская область</div>
+        <div><strong>Телефон:</strong> +7 953 191-20-83</div>
+        <div><strong>Раннее был Email:</strong> arinanikonova@gmail.com</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Профили</h2>
+      <div class="info">
+        <div>VK: <a href="https://vk.com/id539328997" target="_blank">Arina Nikonova</a></div>
+        <div>Instagram: <a href="https://instagram.com/arisanikonova2251" target="_blank">@arisanikonova2251</a></div>
+        <div>Youla: <a href="https://youla.ru/user/5c71065802a5586d0e1e13f3" target="_blank">Профиль</a></div>
+        <div>OK.ru: <a href="https://ok.ru/profile/573679572290" target="_blank">Профиль</a></div>
+        <div>Telegram (основной): <a href="https://t.me/+79531912083" target="_blank">@79531912083</a></div>
+        <div>Telegram (удалённый фейк): @joker100214, ID: 1855043793 — зарегистрирован в мае 2021, последнее появление: 21.10.2023</div>
+      </div>
+    </div>
+
+    <div class="section">
+       <h2>Родственнички</h2>
+      <div class="info">
+        <div><a href="https://vk.com/id349751718" target="_blank">Александр Жабин(папа)</a></div>
+        <div><a href="https://vk.com/id303407318" target="_blank">Александр Никонов</a></div>
+        <div><a href="https://vk.com/id565747125" target="_blank">Ирина Никонова</a></div>
+      </div>
+    </div> 
+
+    <div class="section">
+      <h2>Шлюха</h2>
+      <div class="slideshow">
+        <img src="media/{5AA311A7-C1FE-4452-99A4-573E9C9E579D}.png" alt="Фото 1">
+        <img src="media/{65737644-438F-4081-814B-EEA4ADCD3A6D}.png" alt="Фото 2">
+        <img src="media/{7DFB7AFF-69C8-4B19-8741-2D203161D372}.png" alt="Фото 3">
+        <img src="media/{E6D7B3B1-CC6A-493C-9620-D5D41AC6D7D6}.png" alt="Фото 4">
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Видео</h2>
+      <video controls><source src="media/channel.MP4" type="video/mp4"></video>
+      <video controls><source src="media/25 Августа 2019(день).mp4" type="video/mp4"></video>
+      <video controls><source src="media/25 Августа 2019(вечер).mp4" type="video/mp4"></video>
+    </div>
+
+    <div class="section">
+      <h2>Записи</h2>
+      <div class="info">
+        <span class="tag">Арина Александровна Н.</span>
+        <span class="tag">Арина Никонова</span>
+        <span class="tag">Аришка</span>
+        <span class="tag">Шлюха.</span>
+        <span class="tag">Ариха Чеееек</span>
+        <span class="tag">Арина6б</span>
+        <span class="tag">Подруга Насти</span>
+        <span class="tag">Ариша</span>
+        <span class="tag">Ариша ❤️✌️</span>
+        <span class="tag">Арихундер Никонова</span>
+        <span class="tag">Жёнушка ❤</span>
+        <span class="tag">Любимая Эпл</span>
+      </div>
+    </div>
   </div>
 
   <footer>
-    <span>v0.1 • dark panel placeholder</span>
+    <p>v0.5 • Создано с любовью, специально для мамы Арины!</p>
   </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('.section').forEach(section => {
+      observer.observe(section);
+    });
+  </script>
 </body>
 </html>
